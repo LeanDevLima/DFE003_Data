@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exibir JSON na Página</title>
+</head>
+<body>
+    <h1>Conteúdo JSON</h1>
+    <table id="json">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Ano</th>
+                <th>Lançamento</th>
+                <th>Duração</th>
+                <th>Gênero</th>
+                <th>Diretor</th>
+                <th>Roteirista</th>
+                <th>Atores</th>
+                <th>Enredo</th>
+                <th>Idioma</th>
+                <th>País</th>
+                <th>Prêmios</th>
+                <th>Metascore</th>
+                <th>Avaliação IMDb</th>
+                <th>Votos IMDb</th>
+                <th>IMDb ID</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <script>
+        let tableBody = document.querySelector("#json tbody");
+    
+        fetch('moviess.json').then((response) => {
+            response.json().then((dados) => {
+                dados.movies.forEach((movie) => {
+                    const row = tableBody.insertRow();
+                    row.insertCell().textContent = movie.Title;
+                    row.insertCell().textContent = movie.Year;
+                    row.insertCell().textContent = movie.Released;
+                    row.insertCell().textContent = movie.Runtime;
+                    row.insertCell().textContent = movie.Genre;
+                    row.insertCell().textContent = movie.Director;
+                    row.insertCell().textContent = movie.Writer;
+                    row.insertCell().textContent = movie.Actors;
+                    row.insertCell().textContent = movie.Plot;
+                    row.insertCell().textContent = movie.Language;
+                    row.insertCell().textContent = movie.Country;
+                    row.insertCell().textContent = movie.Awards;
+                    row.insertCell().textContent = movie.Metascore;
+                    row.insertCell().textContent = movie.imdbRating;
+                    row.insertCell().textContent = movie.imdbVotes;
+                    row.insertCell().textContent = movie.imdbID;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
