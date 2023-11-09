@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(3, 0, 27);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(5, 8, 175);
+    transition: 0.3s all;
+}
+
+#button{
+    border: 2px solid rgb(46, 49, 255);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#button:hover{
+    background-color: rgb(46, 49, 255);
+    color: white;
+}
+
+#buttontwo{
+    border: 2px solid rgb(46, 49, 255);
+    padding: 15px;
+    border-radius: 15px;
+    color: antiquewhite;
+    margin-top: 16px;
+    transition: 1s ease;
+    
+}
+
+#buttontwo:hover{
+    background-color: rgb(46, 49, 255);
+    color: white;
+}
+
+    
+
+button{
+    background-color: rgb(3, 0, 27);
+}
+
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    
+}
+
+span{
+    color: rgb(46, 49, 255);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-size: 16px;
+    color: rgb(131, 131, 255);
+    
+}
+
+img{
+    width: 580px;
+    margin-left:200px ;
+    height: 60%;
+    margin-top:0;
+}
+
+
+
+
+
+
